@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.container {
+    background: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #0005;
+}
+
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 15px;
+}
+
+.container > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.teste {
+    background: #f3f6fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #243b55;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background: #365779;
+}
+
+.resultado {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.resultado p {
+    margin: 8px 0;
+}
+
+.resultado span {
+    font-weight: bold;
+    color: #16875b;
+}
+
+.comparacao {
+    margin-top: 25px;
+}
+
+.barra-container {
+    margin-top: 20px;
+}
+
+.barra {
+    background: #ddd;
+    height: 18px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 8px 0 18px;
+}
+
+#barraCurta {
+    height: 100%;
+    width: 0;
+    background: #20b477;
+    transition: width 0.4s;
+}
+
+#barraDetalhada {
+    height: 100%;
+    width: 0;
+    background: #477bdb;
+    transition: width 0.4s;
+}
+
+.limpar {
+    background: #d9534f;
+    margin-top: 15px;
+}
+
+.aviso {
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}

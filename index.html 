@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Tokens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>📊 Comparador de Tokens</h1>
+
+        <p>
+            Compare o consumo de tokens entre prompts
+            curtos e detalhados.
+        </p>
+
+        <section class="teste">
+            <h2>Teste 1 - Prompt curto</h2>
+
+            <textarea id="promptCurto">Explique o que é inteligência artificial.</textarea>
+
+            <button onclick="executarCurto()">
+                Executar teste curto
+            </button>
+
+            <div class="resultado">
+                <p>Tokens de entrada: <span id="entradaCurta">0</span></p>
+                <p>Tokens de saída: <span id="saidaCurta">0</span></p>
+                <p>Total de tokens: <span id="totalCurto">0</span></p>
+            </div>
+        </section>
+
+        <section class="teste">
+            <h2>Teste 2 - Prompt detalhado</h2>
+
+            <textarea id="promptDetalhado">Explique o que é inteligência artificial, como funciona, quais são suas principais aplicações no dia a dia, suas vantagens e desvantagens e como ela pode influenciar o futuro da sociedade. Utilize exemplos simples e organize a explicação em tópicos.</textarea>
+
+            <button onclick="executarDetalhado()">
+                Executar teste detalhado
+            </button>
+
+            <div class="resultado">
+                <p>Tokens de entrada: <span id="entradaDetalhada">0</span></p>
+                <p>Tokens de saída: <span id="saidaDetalhada">0</span></p>
+                <p>Total de tokens: <span id="totalDetalhado">0</span></p>
+            </div>
+        </section>
+
+        <section class="comparacao">
+            <h2>📈 Comparação dos resultados</h2>
+
+            <p id="comparacao">
+                Execute os dois testes para comparar.
+            </p>
+
+            <div class="barra-container">
+                <p>Prompt curto</p>
+                <div class="barra">
+                    <div id="barraCurta"></div>
+                </div>
+
+                <p>Prompt detalhado</p>
+                <div class="barra">
+                    <div id="barraDetalhada"></div>
+                </div>
+            </div>
+        </section>
+
+        <button class="limpar" onclick="limparResultados()">
+            Limpar resultados
+        </button>
+
+        <p class="aviso">
+            Simulação educativa. Os valores não representam
+            medições reais de uma API ou do mentor da unidade.
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
